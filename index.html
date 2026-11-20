@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  PERSONAL ACADEMIC PORTFOLIO — Israt Jahan Mithun
+  ============================================================
+  Beginner-friendly HTML / CSS / JavaScript project.
+
+  FILES:
+    index.html        -> This file. All visible content lives here.
+    css/style.css     -> All colors, fonts, spacing and layout.
+    js/main.js        -> Small interactions (menu, smooth scroll, print).
+    images/           -> Portrait and certificate placeholder images.
+
+  HOW TO EDIT TEXT:
+    Look for comments like  <!-- EDIT: ... -->  throughout this file.
+    Change the words inside the tags. Do not change the class names.
+
+  HOW TO RUN:
+    1. Keep this folder structure intact.
+    2. Double-click index.html to open it in any browser.
+    3. Or open with VS Code "Live Server" for auto-refresh.
+
+  HOW TO REPLACE THE PORTRAIT:
+    Replace images/portrait.jpg with your own photo (same name).
+    Then update <img src="images/portrait.svg" ...> if you rename it.
+
+  HOW TO ADD CERTIFICATES:
+    Put your certificate images in images/certificates/ and update
+    the src in the CERTIFICATES gallery section below.
+
+  PRINT AS PDF:
+    Click the "Save as PDF" button on the page, or press Ctrl+P
+    (Cmd+P on Mac) in your browser.
+============================================================= -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Israt Jahan Mithun — Academic Portfolio</title>
+  <meta name="description" content="Academic portfolio of Israt Jahan Mithun, Science Student | Aspiring Pharmacy Student, Manarat International University">
+
+  <!-- Google Fonts: Libre Baskerville (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Home">IJM<span class="logo-dot">.</span></a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#activities">Academic Activities</a></li>
+          <li><a href="#seminars">Seminars &amp; Workshops</a></li>
+          <li><a href="#volunteering">Volunteering</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#goals">Future Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================== HERO / COVER ======================== -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <!-- EDIT: Your name -->
+        <h1 class="hero-name">Israt Jahan Mithun</h1>
+        <!-- EDIT: Your title -->
+        <p class="hero-title">Science Student | Aspiring Pharmacy Student</p>
+        <!-- EDIT: Your tagline -->
+        <p class="hero-tagline">Learning Today, Building Tomorrow.</p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- EDIT: Replace images/portrait.jpg with your own photo -->
+        <img src="images/portrait.svg" alt="Portrait of Israt Jahan Mithun" class="portrait">
+        <p class="portrait-caption">Israt Jahan Mithun</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ME ======================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-divider"></span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <!-- EDIT: Write your own introduction -->
+          <p>
+            I am a science student with a deep interest in healthcare,
+            pharmaceutical sciences, scientific learning, research, and
+            personal development. My academic journey has been driven by
+            curiosity about how medicines are discovered, how they work, and
+            how they can be used safely to improve people's lives.
+          </p>
+          <p>
+            Currently, I am pursuing my studies in the Department of Pharmacy
+            at Manarat International University (2nd year). I enjoy exploring
+            new scientific ideas, presenting my work, and developing the skills
+            needed to contribute meaningfully to the healthcare field.
+          </p>
+        </div>
+        <div class="about-quick">
+          <h3>At a Glance</h3>
+          <ul class="quick-list">
+            <li><strong>Name:</strong> <span class="editable">Israt Jahan Mithun</span></li>
+            <li><strong>Title:</strong> <span class="editable">Science Student | Aspiring Pharmacy Student</span></li>
+            <li><strong>University:</strong> <span class="editable">Manarat International University</span></li>
+            <li><strong>Department:</strong> <span class="editable">Pharmacy — 2nd Year</span></li>
+            <li><strong>Location:</strong> <span class="editable">Dhaka, Bangladesh</span></li>
+            <li><strong>Email:</strong> <span class="editable">mithunjahan53@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EDUCATION ======================== -->
+  <section id="education" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <span class="section-divider"></span>
+      </div>
+
+      <div class="edu-grid">
+        <!-- EDIT: SSC details -->
+        <div class="edu-card">
+          <h3 class="edu-level">SSC</h3>
+          <p class="edu-school"><strong>Bindubashini Govt Girls High School</strong></p>
+          <p class="edu-group">Group: <span>Science</span></p>
+          <p class="edu-year">Passing Year: <span>2021</span></p>
+        </div>
+
+        <!-- EDIT: HSC details -->
+        <div class="edu-card">
+          <h3 class="edu-level">HSC</h3>
+          <p class="edu-school"><strong>Kumodini Govt College</strong></p>
+          <p class="edu-group">Group: <span>Science</span></p>
+          <p class="edu-year">Passing Year: <span>2023</span></p>
+        </div>
+
+        <!-- EDIT: Current status -->
+        <div class="edu-card featured">
+          <h3 class="edu-level">Current Status</h3>
+          <p class="edu-school"><strong>Manarat International University</strong></p>
+          <p class="edu-group">Department of Pharmacy</p>
+          <p class="edu-year">2nd Year Student</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <span class="section-divider"></span>
+        <p class="section-note">No skill levels invented — these are abilities I have developed through studies and activities.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- EDIT: Add or remove skill items -->
+        <div class="skill-item">Communication Skills</div>
+        <div class="skill-item">Teamwork</div>
+        <div class="skill-item">Presentation Skills</div>
+        <div class="skill-item">Time Management</div>
+        <div class="skill-item">Basic Computer Skills</div>
+        <div class="skill-item">Adaptability</div>
+        <div class="skill-item">Learning Skills</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ACADEMIC ACTIVITIES ======================== -->
+  <section id="activities" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Academic Activities</h2>
+        <span class="section-divider"></span>
+        <p class="section-note">Educational activities, science learning, assignments, presentations, and seminar participation.</p>
+      </div>
+
+      <div class="activity-grid">
+        <!-- EDIT: Academic activity cards -->
+        <div class="activity-card">
+          <h4>Science Learning &amp; Coursework</h4>
+          <p>Regular study of pharmaceutical and science subjects with a focus on understanding core concepts and their real-world application in healthcare.</p>
+        </div>
+        <div class="activity-card">
+          <h4>Academic Assignments</h4>
+          <p>Completion of coursework and written assignments related to pharmacy, drug safety, and scientific research methods.</p>
+        </div>
+        <div class="activity-card">
+          <h4>Presentations</h4>
+          <p>Classroom presentations on scientific topics to develop communication and public-speaking skills.</p>
+        </div>
+        <div class="activity-card">
+          <h4>Seminar Participation</h4>
+          <p>Attendance and active participation in academic seminars and workshops organized by the Department of Pharmacy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SEMINARS & WORKSHOPS ======================== -->
+  <section id="seminars" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Seminars &amp; Workshops</h2>
+        <span class="section-divider"></span>
+        <p class="section-note">Editable cards. Each card shows seminar name, organizer, date, description, and certificate image.</p>
+      </div>
+
+      <div class="seminar-grid">
+        <!-- EDIT: Seminar card 1 -->
+        <div class="seminar-card">
+          <div class="seminar-badge">Seminar</div>
+          <!-- EDIT: Seminar name -->
+          <h3 class="seminar-title">National Research Seminar</h3>
+          <!-- EDIT: Organizer -->
+          <p class="seminar-organizer"><strong>Organizer:</strong> Pharmacy Department</p>
+          <!-- EDIT: Date (leave blank if unknown) -->
+          <p class="seminar-date"><strong>Date:</strong> <span class="editable">To be confirmed</span></p>
+          <!-- EDIT: Description -->
+          <p class="seminar-desc">Participated in a national-level research seminar organized by the Department of Pharmacy to learn about current pharmaceutical research and developments.</p>
+          <div class="seminar-cert">
+            <!-- EDIT: Replace with your certificate image -->
+            <img src="images/cert-placeholder.svg" alt="Certificate placeholder" class="cert-img">
+            <p class="cert-label">Certificate</p>
+          </div>
+        </div>
+
+        <!-- EDIT: Seminar card 2 (change details as needed) -->
+        <div class="seminar-card">
+          <div class="seminar-badge">Workshop</div>
+          <!-- EDIT: Seminar name -->
+          <h3 class="seminar-title editable">Second Seminar / Workshop</h3>
+          <!-- EDIT: Organizer -->
+          <p class="seminar-organizer"><strong>Organizer:</strong> <span class="editable">Department of Pharmacy</span></p>
+          <!-- EDIT: Date -->
+          <p class="seminar-date"><strong>Date:</strong> <span class="editable">To be confirmed</span></p>
+          <!-- EDIT: Description -->
+          <p class="seminar-desc editable">Description of your participation, what you learned, and how it contributed to your academic growth.</p>
+          <div class="seminar-cert">
+            <img src="images/cert-placeholder.svg" alt="Certificate placeholder" class="cert-img">
+            <p class="cert-label">Certificate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== VOLUNTEERING & EXTRACURRICULAR ======================== -->
+  <section id="volunteering" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Volunteering &amp; Extracurricular Activities</h2>
+        <span class="section-divider"></span>
+        <p class="section-note">Volunteering, student activities, educational events, and participation activities.</p>
+      </div>
+
+      <div class="volunteer-grid">
+        <!-- EDIT: Volunteering card 1 -->
+        <div class="volunteer-card">
+          <h4>Carnival 2.0 — Pharmacy Club</h4>
+          <p><strong>Department:</strong> Pharmacy Department, Manarat International University</p>
+          <p><strong>Role:</strong> Volunteer</p>
+          <p><strong>Club:</strong> Pharmacy Club</p>
+          <p class="editable">Helped organize and run Carnival 2.0, a student event hosted by the pharmacy department.</p>
+        </div>
+
+        <!-- EDIT: Volunteering / student activity card 2 -->
+        <div class="volunteer-card">
+          <h4 class="editable">Student Activity</h4>
+          <p class="editable"><strong>Department:</strong> Pharmacy Department</p>
+          <p class="editable"><strong>Role:</strong> Participant</p>
+          <p class="editable">Description of your student activity or participation here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CERTIFICATES ======================== -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certificates</h2>
+        <span class="section-divider"></span>
+        <p class="section-note">Certificate gallery. Replace images easily — place your files in images/certificates/.</p>
+      </div>
+
+      <div class="cert-gallery">
+        <!-- EDIT: Add or remove certificate items -->
+        <div class="cert-item">
+          <img src="images/cert-placeholder.svg" alt="Certificate placeholder" class="cert-gallery-img">
+          <p class="cert-caption editable">Your Certificate Title</p>
+        </div>
+        <div class="cert-item">
+          <img src="images/cert-placeholder.svg" alt="Certificate placeholder" class="cert-gallery-img">
+          <p class="cert-caption editable">Your Certificate Title</p>
+        </div>
+        <div class="cert-item">
+          <img src="images/cert-placeholder.svg" alt="Certificate placeholder" class="cert-gallery-img">
+          <p class="cert-caption editable">Your Certificate Title</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== INTERESTS ======================== -->
+  <section id="interests" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Interests</h2>
+        <span class="section-divider"></span>
+      </div>
+
+      <div class="interests-grid">
+        <!-- EDIT: Add or remove interests -->
+        <div class="interest-chip">Pharmaceutical Sciences</div>
+        <div class="interest-chip">Healthcare</div>
+        <div class="interest-chip">Scientific Research</div>
+        <div class="interest-chip">Public Health</div>
+        <div class="interest-chip">Drug Safety</div>
+        <div class="interest-chip">Learning New Skills</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FUTURE GOALS ======================== -->
+  <section id="goals" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Future Goals</h2>
+        <span class="section-divider"></span>
+      </div>
+
+      <div class="goals-content">
+        <!-- EDIT: Your future goals statement -->
+        <p>
+          My goal is to complete my pharmacy education with strong academic
+          foundations, develop practical and research skills in pharmaceutical
+          sciences, and contribute to safer and more effective healthcare.
+          I aspire to grow as a competent pharmacy professional who supports
+          public health and drug safety through continuous learning and
+          evidence-based practice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <span class="section-divider"></span>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <!-- EDIT: Contact details -->
+          <p><strong>Email:</strong> <a href="mailto:mithunjahan53@gmail.com">mithunjahan53@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:01727700690">01727700690</a></p>
+          <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+          <p><strong>LinkedIn:</strong> <a href="#" class="editable" target="_blank" rel="noopener">Add your LinkedIn URL</a></p>
+        </div>
+
+        <div class="contact-actions">
+          <button class="btn btn-primary" id="print-btn" aria-label="Save portfolio as PDF">
+            Save as PDF
+          </button>
+          <p class="print-hint">Press <kbd>Ctrl</kbd> + <kbd>P</kbd> (<kbd>Cmd</kbd> + <kbd>P</kbd> on Mac) to print or save as PDF.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Israt Jahan Mithun. Academic portfolio project — created for educational presentation.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
